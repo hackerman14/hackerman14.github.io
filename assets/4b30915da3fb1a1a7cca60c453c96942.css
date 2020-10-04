@@ -1929,7 +1929,7 @@ input.brz-mm-check {
   text-transform: initial; }
   .brz .brz-menu.brz-mm-menu.brz-mm-menu_opened {
     display: block; }
-  .brz .brz-menu.brz-mm-menu .brz-mm-navbar a,
+  .brz .brz-menu.brz-mm-menu .brz-mm-navbar a:not(.brz-btn),
   .brz .brz-menu.brz-mm-menu .brz-mm-navbar > * {
     color: inherit; }
   .brz .brz-menu.brz-mm-menu .brz-mm-navbar:not(.brz-mm-listitem) {

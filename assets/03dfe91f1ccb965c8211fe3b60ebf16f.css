@@ -313,9 +313,8 @@
   transition: opacity 0.4s ease; }
   .brz-mm-navbar > * {
     min-height: 44px; }
-  @supports ((position: -webkit-sticky) or (position: sticky)) {
+  @supports (position: sticky) {
     .brz-mm-navbar_sticky {
-      position: -webkit-sticky;
       position: sticky;
       top: 0;
       z-index: 1; } }
@@ -856,9 +855,8 @@
   transition: opacity 0.4s ease; }
   .brz-mm-divider:before {
     background: rgba(0, 0, 0, 0.05); }
-  @supports ((position: -webkit-sticky) or (position: sticky)) {
+  @supports (position: sticky) {
     .brz-mm-divider {
-      position: -webkit-sticky;
       position: sticky;
       z-index: 2;
       top: 0; }
@@ -2084,6 +2082,13 @@ input.brz-mm-check {
 
 .brz .brz-mega-menu__dropdown {
   width: 100%; }
+
+.brz .brz-mega-menu {
+  position: relative; }
+  .brz .brz-mega-menu > .brz-bg {
+    overflow: hidden; }
+  .brz .brz-mega-menu > .brz-container {
+    position: relative; }
 
 .brz .brz-mega-menu__mmenu {
   overflow: visible;

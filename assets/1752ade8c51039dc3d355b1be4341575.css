@@ -5195,11 +5195,7 @@ img.mfp-img {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        border-radius: 50%;
-        -webkit-transition: -webkit-transform 0.3s ease;
-        transition: -webkit-transform 0.3s ease;
-        transition: transform 0.3s ease;
-        transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
+        border-radius: 50%; }
         .brz .brz-video .brz-video__cover .brz-video__cover-icon .brz-icon-svg {
           width: 100%;
           left: 2px; }
@@ -5365,12 +5361,6 @@ img.mfp-img {
         border-radius: 0 !important; }
       .brz .brz-custom-video .brz-video-content:hover .brz-shortcode__placeholder .brz-icon-svg {
         cursor: pointer; }
-      .brz .brz-custom-video .brz-video-content .brz-shortcode__placeholder {
-        -webkit-transition: all 0.6s ease;
-        transition: all 0.6s ease; }
-      .brz .brz-custom-video .brz-video-content .brz-icon-svg {
-        -webkit-transition: all 0.6s ease;
-        transition: all 0.6s ease; }
   .brz .brz-custom-video.brz-video-on-controls-hidden .brz-video__cover,
   .brz .brz-custom-video.brz-video-on-controls-hidden .brz-shortcode__placeholder,
   .brz .brz-custom-video.brz-video-on-controls-hidden video {
@@ -5405,6 +5395,8 @@ img.mfp-img {
     width: 100%;
     display: inline-block;
     vertical-align: middle; }
+    .brz .brz-video-playlist .brz-play-button {
+      line-height: 0; }
     .brz .brz-video-playlist:before {
       content: "";
       width: 100%;
@@ -5826,25 +5818,25 @@ img.mfp-img {
       color: transparent !important;
       -webkit-background-clip: text;
       background-clip: text; }
-    .brz .brz-rich-text h1,
-    .brz .brz-rich-text h2,
-    .brz .brz-rich-text h3,
-    .brz .brz-rich-text h4,
-    .brz .brz-rich-text h5,
-    .brz .brz-rich-text h6 {
+    .brz .brz-rich-text > h1,
+    .brz .brz-rich-text > h2,
+    .brz .brz-rich-text > h3,
+    .brz .brz-rich-text > h4,
+    .brz .brz-rich-text > h5,
+    .brz .brz-rich-text > h6 {
       margin-top: 0;
       margin-bottom: 0;
       padding: 0;
       text-transform: initial;
       text-decoration: initial; }
-      .brz .brz-rich-text h1:before,
-      .brz .brz-rich-text h2:before,
-      .brz .brz-rich-text h3:before,
-      .brz .brz-rich-text h4:before,
-      .brz .brz-rich-text h5:before,
-      .brz .brz-rich-text h6:before {
+      .brz .brz-rich-text > h1:before,
+      .brz .brz-rich-text > h2:before,
+      .brz .brz-rich-text > h3:before,
+      .brz .brz-rich-text > h4:before,
+      .brz .brz-rich-text > h5:before,
+      .brz .brz-rich-text > h6:before {
         display: none; }
-    .brz .brz-rich-text p,
+    .brz .brz-rich-text > p,
     .brz .brz-rich-text span {
       margin-top: 0;
       margin-bottom: 0;
@@ -8364,7 +8356,7 @@ b {
         will-change: height, transition-duration;
         background-clip: padding-box;
         border-top-color: transparent !important; }
-      .brz .brz-accordion__item > .brz-accordion__content > * {
+      .brz .brz-accordion__item-content > * {
         -ms-flex-negative: 0;
             flex-shrink: 0; }
       .brz .brz-accordion__item > .brz-accordion__nav > .brz-accordion--icon-wrapper > .brz-accordion__nav--previewIcon--active {
@@ -8375,8 +8367,8 @@ b {
       display: none; }
     .brz .brz-accordion__item--active > .brz-accordion__content {
       height: auto; }
-      .brz .brz-accordion__item--active > .brz-accordion__content:empty {
-        min-height: 50px; }
+    .brz .brz-accordion__item--active > .brz-accordion__content > .brz-accordion__item-content:empty {
+      min-height: 50px; }
   .brz .brz-accordion__filter-wrapper {
     width: 100%;
     display: -webkit-box;
@@ -8711,6 +8703,10 @@ b {
   .brz .brz-fb-page,
   .brz .brz-fb-comments {
     width: 100%; }
+  .brz .brz-fb-styles-button--small-button {
+    height: 20px; }
+  .brz .brz-fb-styles-button--small-boxed {
+    height: 64px; }
   .brz .brz-wp__breadcrumbs {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8748,14 +8744,17 @@ b {
       .brz .brz-wp__breadcrumbs .brz-breadcrumbs .brz-li:not(:last-child) .brz-a {
         color: inherit; }
   .brz .brz-wp__postinfo {
-    width: auto !important;
-    padding: 0;
-    margin: 0;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     word-break: break-all; }
     .brz .brz-wp__postinfo__column ul {
       display: -webkit-box;
@@ -9900,8 +9899,23 @@ b {
       margin-bottom: 0; }
     .brz .brz-wp-post-content > div > * {
       margin-bottom: 1em; }
+  .brz .brz-rich-text .brz-tp__dc-block-st1 {
+    width: 100%;
+    white-space: initial; }
+    .brz .brz-rich-text .brz-tp__dc-block-st1 > :first-child {
+      margin-top: 0; }
+    .brz .brz-rich-text .brz-tp__dc-block-st1 > :last-child {
+      margin-bottom: 0; }
+    .brz .brz-rich-text .brz-tp__dc-block-st1 > * {
+      margin-bottom: 1em; }
   .brz .brz-wp-post-excerpt {
     width: 100%; }
+    .brz .brz-wp-post-excerpt-content {
+      margin: 0; }
+  .brz .brz-wp-title {
+    width: 100%; }
+    .brz .brz-wp-title-content {
+      margin: 0; }
   .brz .brz-woo-stock {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10218,12 +10232,15 @@ b {
     .brz .brz-woo-gallery .woocommerce-product-gallery .flex-viewport {
       margin-bottom: 0;
       width: 100%; }
+    .brz .brz-woo-gallery .woocommerce-product-gallery .woocommerce-product-gallery__wrapper {
+      overflow: hidden; }
     .brz .brz-woo-gallery .woocommerce-product-gallery .flex-control-thumbs {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+      padding: 0; }
       .brz .brz-woo-gallery .woocommerce-product-gallery .flex-control-thumbs li {
         overflow: hidden; }
   .brz .brz-woo-gallery.brz-woo-gallery__thumbsTB-1 .flex-control-thumbs li:nth-child(1n),

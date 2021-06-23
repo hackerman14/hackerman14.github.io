@@ -1,87 +1,97 @@
-! function(e) {
-    var t = {};
+! function(t) {
+    var e = {};
 
-    function n(r) {
-        if (t[r]) return t[r].exports;
-        var o = t[r] = {
-            i: r,
+    function r(n) {
+        if (e[n]) return e[n].exports;
+        var o = e[n] = {
+            i: n,
             l: !1,
             exports: {}
         };
-        return e[r].call(o.exports, o, o.exports, n), o.l = !0, o.exports
+        return t[n].call(o.exports, o, o.exports, r), o.l = !0, o.exports
     }
-    n.m = e, n.c = t, n.d = function(e, t, r) {
-        n.o(e, t) || Object.defineProperty(e, t, {
+    r.m = t, r.c = e, r.d = function(t, e, n) {
+        r.o(t, e) || Object.defineProperty(t, e, {
             enumerable: !0,
-            get: r
+            get: n
         })
-    }, n.r = function(e) {
-        "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+    }, r.r = function(t) {
+        "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(t, Symbol.toStringTag, {
             value: "Module"
-        }), Object.defineProperty(e, "__esModule", {
+        }), Object.defineProperty(t, "__esModule", {
             value: !0
         })
-    }, n.t = function(e, t) {
-        if (1 & t && (e = n(e)), 8 & t) return e;
-        if (4 & t && "object" == typeof e && e && e.__esModule) return e;
-        var r = Object.create(null);
-        if (n.r(r), Object.defineProperty(r, "default", {
+    }, r.t = function(t, e) {
+        if (1 & e && (t = r(t)), 8 & e) return t;
+        if (4 & e && "object" == typeof t && t && t.__esModule) return t;
+        var n = Object.create(null);
+        if (r.r(n), Object.defineProperty(n, "default", {
                 enumerable: !0,
-                value: e
-            }), 2 & t && "string" != typeof e)
-            for (var o in e) n.d(r, o, function(t) {
-                return e[t]
+                value: t
+            }), 2 & e && "string" != typeof t)
+            for (var o in t) r.d(n, o, function(e) {
+                return t[e]
             }.bind(null, o));
-        return r
-    }, n.n = function(e) {
-        var t = e && e.__esModule ? function() {
-            return e.default
+        return n
+    }, r.n = function(t) {
+        var e = t && t.__esModule ? function() {
+            return t.default
         } : function() {
-            return e
+            return t
         };
-        return n.d(t, "a", t), t
-    }, n.o = function(e, t) {
-        return Object.prototype.hasOwnProperty.call(e, t)
-    }, n.p = "", n(n.s = 99)
+        return r.d(e, "a", e), e
+    }, r.o = function(t, e) {
+        return Object.prototype.hasOwnProperty.call(t, e)
+    }, r.p = "", r(r.s = 100)
 }({
-    2: function(e, t, n) {
+    100: function(t, e, r) {
         "use strict";
-        n.d(t, "a", function() {
-            return r
-        }), n.d(t, "f", function() {
+        r.r(e);
+        var n = r(2);
+        if ("undefined" != typeof ServiceWorkerGlobalScope) {
+            var o = "https://arc.io" + n.k;
+            importScripts(o)
+        } else if ("undefined" != typeof SharedWorkerGlobalScope) {
+            var c = "https://arc.io" + n.i;
+            importScripts(c)
+        } else if ("undefined" != typeof DedicatedWorkerGlobalScope) {
+            var i = "https://arc.io" + n.b;
+            importScripts(i)
+        }
+    },
+    2: function(t, e, r) {
+        "use strict";
+        r.d(e, "a", (function() {
+            return n
+        })), r.d(e, "f", (function() {
             return c
-        }), n.d(t, "j", function() {
+        })), r.d(e, "j", (function() {
             return i
-        }), n.d(t, "i", function() {
+        })), r.d(e, "i", (function() {
             return a
-        }), n.d(t, "b", function() {
+        })), r.d(e, "b", (function() {
             return d
-        }), n.d(t, "k", function() {
+        })), r.d(e, "k", (function() {
             return f
-        }), n.d(t, "c", function() {
-            return p
-        }), n.d(t, "d", function() {
+        })), r.d(e, "c", (function() {
+            return u
+        })), r.d(e, "d", (function() {
             return s
-        }), n.d(t, "e", function() {
+        })), r.d(e, "e", (function() {
             return l
-        }), n.d(t, "g", function() {
+        })), r.d(e, "h", (function() {
             return m
-        }), n.d(t, "h", function() {
+        })), r.d(e, "g", (function() {
             return v
-        });
-        var r = {
-                images: ["bmp", "jpeg", "jpg", "ttf", "pict", "svg", "webp", "eps", "svgz", "gif", "png", "ico",
-                    "tif", "tiff", "bpg"
-                ],
-                video: ["mp4", "3gp", "webm", "mkv", "flv", "f4v", "f4p", "f4bogv", "drc", "avi", "mov", "qt",
-                    "wmv", "amv", "mpg", "mp2", "mpeg", "mpe", "m2v", "m4v", "3g2", "gifv", "mpv"
-                ],
-                audio: ["mid", "midi", "aac", "aiff", "flac", "m4a", "m4p", "mp3", "ogg", "oga", "mogg", "opus",
-                    "ra", "rm", "wav", "webm", "f4a", "pat"
-                ],
+        }));
+        var n = {
+                images: ["bmp", "jpeg", "jpg", "ttf", "pict", "svg", "webp", "eps", "svgz", "gif", "png", "ico", "tif", "tiff", "bpg", "avif", "jxl"],
+                video: ["mp4", "3gp", "webm", "mkv", "flv", "f4v", "f4p", "f4bogv", "drc", "avi", "mov", "qt", "wmv", "amv", "mpg", "mp2", "mpeg", "mpe", "m2v", "m4v", "3g2", "gifv", "mpv", "av1"],
+                audio: ["mid", "midi", "aac", "aiff", "flac", "m4a", "m4p", "mp3", "ogg", "oga", "mogg", "opus", "ra", "rm", "wav", "webm", "f4a", "pat"],
                 interchange: ["json", "yaml", "xml", "csv", "toml", "ini", "bson", "asn1", "ubj"],
+                archives: ["jar", "iso", "tar", "tgz", "tbz2", "tlz", "gz", "bz2", "xz", "lz", "z", "7z", "apk", "dmg", "rar", "lzma", "txz", "zip", "zipx"],
                 documents: ["pdf", "ps", "doc", "docx", "ppt", "pptx", "xls", "otf", "xlsx"],
-                other: ["swf"]
+                other: ["srt", "swf"]
             },
             o = "arc:",
             c = {
@@ -102,26 +112,11 @@
             a = "/".concat("shared-worker", ".js"),
             d = "/".concat("dedicated-worker", ".js"),
             f = "/".concat("arc-sw-core", ".js"),
-            u = "".concat("arc-sw", ".js"),
-            p = ("/".concat(u), "/".concat("arc-sw"), "arc-db"),
+            p = "".concat("arc-sw", ".js"),
+            u = ("/".concat(p), "/".concat("arc-sw"), "arc-db"),
             s = "key-val-store",
             l = 2 ** 17,
             m = "".concat("https://overmind.arc.io", "/api/propertySession"),
             v = "".concat("https://warden.arc.io", "/mailbox/propertySession")
-    },
-    99: function(e, t, n) {
-        "use strict";
-        n.r(t);
-        var r = n(2);
-        if ("undefined" != typeof ServiceWorkerGlobalScope) {
-            var o = "https://arc.io" + r.k;
-            importScripts(o)
-        } else if ("undefined" != typeof SharedWorkerGlobalScope) {
-            var c = "https://arc.io" + r.i;
-            importScripts(c)
-        } else if ("undefined" != typeof DedicatedWorkerGlobalScope) {
-            var i = "https://arc.io" + r.b;
-            importScripts(i)
-        }
     }
 });
